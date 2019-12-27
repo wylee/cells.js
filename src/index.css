@@ -1,0 +1,60 @@
+html {
+    border: 0;
+    box-sizing: border-box;
+    color: #404040;
+    font-family: "Roboto";
+    font-size: 16px;
+    outline: 0;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    padding: 0;
+}
+
+.full-width-and-height {
+    width: 100%;
+    height: 100%;
+}
+
+#toggle-options-button,
+.Options {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#toggle-options-button {
+    z-index: 2;
+}
+
+.Options {
+    width: 256px;
+    z-index: 1;
+    padding: 4px;
+}

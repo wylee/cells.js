@@ -1,0 +1,6 @@
+/.env.*
+/.pnp
+/.pnp.js
+/build
+/coverage
+/node_modules

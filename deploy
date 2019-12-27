@@ -1,0 +1,16 @@
+#!/bin/bash
+
+ROOT="${HOME}/Projects/wyattbaldwin.com"
+SUB_DIR="content/cells"
+TARGET="${ROOT}/${SUB_DIR}"
+
+npm run build
+
+echo "Copying build to $TARGET..."
+rm -r "$TARGET"
+cp -R build "$TARGET"
+
+echo "Committing changes in $ROOT..."
+git -C "$ROOT" add "$SUB_DIR"
+git -C "$ROOT" commit -m "Update cells"
+
