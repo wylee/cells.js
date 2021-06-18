@@ -13,4 +13,3 @@ cp -R build "$TARGET"
 echo "Committing changes in $ROOT..."
 git -C "$ROOT" add "$SUB_DIR"
 git -C "$ROOT" commit -m "Update cells"
-
